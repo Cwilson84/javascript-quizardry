@@ -1,2 +1,2 @@
 # javascript-quizardry
-Module 4 Challenge
+Module Four Challenge
