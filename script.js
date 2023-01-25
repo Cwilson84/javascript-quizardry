@@ -1,82 +1,13 @@
-var randomQuestion = [{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true }
-    ]
-
-},
-{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
-    ]
-
-},
-{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false }
-    ]
-
-}, 
-{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: true },
-        { text: "", isCorrect: false }
-    ]
-
-}, 
-{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: true },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
-    ]
-
-},
-{
-    id: 0,
-    q: "?",
-    a: [{ text: "", isCorrect: false },
-        { text: "", isCorrect: true},
-        { text: "", isCorrect: false },
-        { text: "", isCorrect: false }
-    ]
-
-}
-];
-function iterate(id) {
-    var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
-    var questionText = document.getElementById("#question");
-    question.innerText = randomQuestion[id].q;
-
-    
-
-question.innerText = randomQuestion
-var optionOne = document.getElementById("#op1");
-var optionTwo = document.getElementById("#op2");
-var optionThree = document.getElementById("#op3");
-var optionFour = document.getElementById("#op4"); 
-var timerColorChange = document.querySelector(".timer-container");
 var timeLeft = 30;
-
 document.getElementById("countdown").innerHTML = timeLeft;
-var timerFunc = setInterval(function() {
+$(".start-button").click( function() {
+    $(this).css({
+        background: 'grey'
+    });
+    $(".start-button").prop("disabled", true);
+    var timerColorChange = document.querySelector(".timer-container");
+    var timeLeft = 30;
+    setInterval(function() {
     if  (timeLeft >= 21) {
         document.getElementById("countdown").innerHTML = timeLeft;
     } else if (timeLeft >= 11 && timeLeft <= 30) {
@@ -88,8 +19,8 @@ var timerFunc = setInterval(function() {
     } else {
         clearInterval();
     }
-timeLeft -= 1;
-    if (timeLeft === -2) {
+    timeLeft -= 1;
+        if (timeLeft === -2) {
          var tryAgain = confirm("Game Over. Try Again?");
         if (tryAgain === true) {
              location.reload();
@@ -98,7 +29,7 @@ timeLeft -= 1;
         }
     }         
 }, 1000);
-
+});
 
 
 
