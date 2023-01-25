@@ -1,10 +1,4 @@
-var questionText = document.getElementById("#question");
-var optionOne = document.getElementById("#op1");
-var optionTwo = document.getElementById("#op2");
-var optionThree = document.getElementById("#op3");
-var optionFour = document.getElementById("#op4"); 
-
-var randomQuestions = [{
+var randomQuestion = [{
     id: 0,
     q: "?",
     a: [{ text: "", isCorrect: false },
@@ -65,9 +59,22 @@ var randomQuestions = [{
 
 }
 ];
+function iterate(id) {
+    var result = document.getElementsByClassName("result");
+    result[0].innerText = "";
+    var questionText = document.getElementById("#question");
+    question.innerText = randomQuestion[id].q;
 
+    
+
+question.innerText = randomQuestion
+var optionOne = document.getElementById("#op1");
+var optionTwo = document.getElementById("#op2");
+var optionThree = document.getElementById("#op3");
+var optionFour = document.getElementById("#op4"); 
 var timerColorChange = document.querySelector(".timer-container");
 var timeLeft = 30;
+
 document.getElementById("countdown").innerHTML = timeLeft;
 var timerFunc = setInterval(function() {
     if  (timeLeft >= 21) {
