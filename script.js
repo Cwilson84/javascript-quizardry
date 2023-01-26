@@ -1,12 +1,20 @@
+
+
 var timeLeft = 60;
 var userScore;
 document.getElementById("countdown").innerHTML = timeLeft;
+var questionsArray = [{
+    question: "What is the correct syntax to embed an image using HTML?",
+    options: [`<image src="image.png">`, `img src="image.png`, `<img src="image.png">`, `<image href="image.png">`],
+    answer: 2 
+}];
+
 $(".start-button").click( function() {
     $(this).css({
         background: 'grey'
     });
     $(".start-button").prop("disabled", true);
-    $(".start-button").prop("", )
+    document.getElementById("question").innerHTML = (Math.floor(Math.random) * questionsArray.length);
     var timerColorChange = document.querySelector(".timer-container");
     var timeLeft = 60;
     setInterval(function() {
@@ -21,6 +29,7 @@ $(".start-button").click( function() {
     } else {
         clearInterval();
     }
+
     timeLeft -= 1;
         if (timeLeft === -2) {
          var tryAgain = confirm("Time has expired for this attempt.  You scored " + userScore + ".  Try Again?");
@@ -29,9 +38,12 @@ $(".start-button").click( function() {
         } else {
              location.href="https://google.com";
         }
+    
     }         
 }, 1000);
 });
+
+console.log(question);
 
 
 
