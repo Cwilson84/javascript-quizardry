@@ -1,4 +1,4 @@
-var timeLeft = 30;
+var timeLeft = 60;
 var userScore;
 document.getElementById("countdown").innerHTML = timeLeft;
 $(".start-button").click( function() {
