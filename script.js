@@ -1,12 +1,14 @@
 var timeLeft = 30;
+var userScore;
 document.getElementById("countdown").innerHTML = timeLeft;
 $(".start-button").click( function() {
     $(this).css({
         background: 'grey'
     });
     $(".start-button").prop("disabled", true);
+    $(".start-button").prop("", )
     var timerColorChange = document.querySelector(".timer-container");
-    var timeLeft = 30;
+    var timeLeft = 60;
     setInterval(function() {
     if  (timeLeft >= 21) {
         document.getElementById("countdown").innerHTML = timeLeft;
@@ -21,7 +23,7 @@ $(".start-button").click( function() {
     }
     timeLeft -= 1;
         if (timeLeft === -2) {
-         var tryAgain = confirm("Game Over. Try Again?");
+         var tryAgain = confirm("Time has expired for this attempt.  You scored " + userScore + ".  Try Again?");
         if (tryAgain === true) {
              location.reload();
         } else {
