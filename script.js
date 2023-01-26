@@ -1,6 +1,6 @@
 
 
-var timeLeft = 60;
+var timeLeft = 30;
 var userScore;
 document.getElementById("countdown").innerHTML = timeLeft;
 var questionsArray = [{
@@ -14,9 +14,13 @@ $(".start-button").click( function() {
         background: 'grey'
     });
     $(".start-button").prop("disabled", true);
-    document.getElementById("question").innerHTML = (Math.floor(Math.random) * questionsArray.length);
+    document.getElementById("question").innerText = questionsArray[0].question;
+    document.getElementById("op1").innerText = questionsArray[0].options[0];
+    document.getElementById("op2").innerText = questionsArray[0].options[1];
+    document.getElementById("op3").innerText = questionsArray[0].options[2];
+    document.getElementById("op4").innerText = questionsArray[0].options[3];
     var timerColorChange = document.querySelector(".timer-container");
-    var timeLeft = 60;
+    var timeLeft = 30;
     setInterval(function() {
     if  (timeLeft >= 21) {
         document.getElementById("countdown").innerHTML = timeLeft;
@@ -40,10 +44,10 @@ $(".start-button").click( function() {
         }
     
     }         
-}, 1000);
+}, 500);
 });
 
-console.log(question);
+
 
 
 
