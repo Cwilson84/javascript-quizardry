@@ -143,7 +143,8 @@ body {
 
 }
 
-.start-button {
+.start-button, 
+.next-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,6 +157,10 @@ body {
 }
 
 .start-button:hover {
+    opacity: .6;
+    box-shadow: 5px 5px 10px black;
+}
+.next-button:hover {
     opacity: .6;
     box-shadow: 5px 5px 10px black;
 }
