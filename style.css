@@ -143,8 +143,20 @@ body {
 
 }
 
-.start-button, 
 .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14vw;
+    padding: 5px;
+    font-size: larger;
+    color: white; 
+    background-color: #BF3325;
+    border-radius: 15px;
+    
+}
+
+.start-button {
     display: flex;
     justify-content: center;
     align-items: center;
