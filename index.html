@@ -9,28 +9,23 @@
 </head>
 
 <body>
-	<div class="panel">
+	<div id="panel">
 
 		<div class="question-container">
 			<p id="question"></p>
 				<div class="timer-container"><span id="countdown"></span></div>
 		</div>
 
-		<div class="option-container">
-			<button class="option-button" id="op1" ></button>
-	
-			<button class="option-button" id="op2" ></button>
-	
-			<button class="option-button" id="op3"></button>
-	
-			<button class="option-button" id="op4"></button>
+		<div id="option-container">
+			<button class="option-button">Answer 1</button>
+			<button class="option-button">Answer 2</button>
+			<button class="option-button">Answer 3</button>
+			<button class="option-button">Answer 4</button>
 		</div>
 		<div class="navigation">
 			<button class="start-button" onclick="">Start</button>
-			<button class="next-button">Next</button>
-		</div>
-		<div class="result">
-			<p id="result"></p>
+			<span class="current-score">0/10</span><span class="hi-score">0/10</span>
+			<button class="skip-button" onclick="">Skip</button>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>

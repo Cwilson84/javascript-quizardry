@@ -164,7 +164,7 @@ $(".start-button").click( function() {
                 background: "#bfcacbef"});
             });
     });
-// timer function continues      
+id// timer function continues      
     var timerColorChange = document.querySelector(".timer-container");
     var timeLeft = 30;
     setInterval(function() {
