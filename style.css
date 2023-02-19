@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-#greeting-lander {
+.greeting-lander {
     display: flex;
     width: 50vw;
     height: 60vh;
@@ -24,6 +24,12 @@ body {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px black;
+}
+
+#welcome-text {
+    padding: .5em;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .timer-container {
