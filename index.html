@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bridge of Death</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bridge of Death</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<!-- main container panel for cards -->
 	<div id="panel">
 
+		<div id="greeting-lander">
+			<p>test</p><!-- filled by greetingLander -->
+		</div> 
+		
 		<div class="question-container">
-			<p id="question"></p>
-				<div class="timer-container"><span id="countdown"></span></div>
+			<p id="question">
+				<!--filled by question-->
+			</p>
+			<div class="timer-container">
+				<span id="countdown"></span>
+			</div>
 		</div>
-
+		<!-- main housing container for answer options -->
 		<div id="option-container">
-			<button class="option-button">Answer 1</button>
-			<button class="option-button">Answer 2</button>
-			<button class="option-button">Answer 3</button>
-			<button class="option-button">Answer 4</button>
+			<!-- filled by answerOptions -->
 		</div>
+		<!-- main content card navbar -->
 		<div class="navigation">
-			<button class="start-button" onclick="">Start</button>
-			<span class="current-score">0/10</span><span class="hi-score">0/10</span>
-			<button class="skip-button" onclick="">Skip</button>
+			<span id="start-button">Start</span>
+			<span id="current-score">0/10</span>
+			<span id="hi-score">0/10</span>
+			<span id="skip-next-button"></span>
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
