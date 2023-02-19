@@ -34,7 +34,7 @@ function startButtonClicked() {
     startButton.style.pointerEvents = 'none';
     timerEl.innerHTML = timeLeft;
     timerContainer.setAttribute("style", "background-color: green; width: 62vw");
-    greetingLander.innerHTML = "";
+    welcomeText.innerHTML = "";
     setTimeout(timer, 500);
 };
 

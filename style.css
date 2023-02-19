@@ -1,8 +1,8 @@
 body {
     padding: 0;
-    margin: 0;    
-    width:100vw;
-    height: 100vh; 
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 #panel {
@@ -40,7 +40,7 @@ body {
     opacity: .9;
     font-size: 1.3em;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     color: snow;
     border-radius: 10px;
     padding: .5em;
@@ -71,16 +71,16 @@ body {
     width: 50vw;
     margin-right: auto;
     margin-left: auto;
-}  
+}
 
 .navigation {
     width: 80vw;
-    height:6vh;
+    height: 6vh;
     margin: 10px;
     padding: 5px;
     display: flex;
     justify-content: space-evenly;
-    background-color:#bfcacbef;
+    background-color: #bfcacbef;
     border-radius: 20px;
     box-shadow: 2px 2px 10px black;
     align-items: center;
@@ -94,10 +94,10 @@ body {
     width: 14vw;
     padding: 5px;
     font-size: 1.6em;
-    color: white; 
+    color: white;
     background-color: #BF3325;
     border-radius: 15px;
-    
+
 }
 
 #start-button {
@@ -107,7 +107,7 @@ body {
     width: 14vw;
     padding: 5px;
     font-size: 1.6em;
-    color: white; 
+    color: white;
     background-color: #BF3325;
     border-radius: 15px;
 }
@@ -116,11 +116,8 @@ body {
     opacity: .6;
     box-shadow: 5px 5px 10px black;
 }
+
 #skip-next-button:hover {
     opacity: .6;
     box-shadow: 5px 5px 10px black;
 }
-
-
-
-
